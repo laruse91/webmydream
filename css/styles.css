@@ -1,0 +1,218 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.animated {
+    opacity: 
+    0;
+}
+.header {
+    background-color: #e43b7c;
+    background-image: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%);
+    padding-top: 65px;
+    color: white;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.header-block {
+    display: flex;
+    align-items:center;
+}
+.header-title {
+    width: 560px; 
+    font-size: 37px;
+    letter-spacing: 0.74px;
+    margin-bottom: 47px;
+}
+.high-text{   
+    font-size: 59px;
+    letter-spacing: 1.18px;
+    line-height: 73px; 
+}
+.header-text {
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 67px;
+}
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffd429;
+    padding: 22px 27px;
+    transition: all 0.5s ease;
+}
+.button:hover {
+    background: #e2b606;
+}
+.dream-img {
+    margin-top: 50px;
+} 
+.future {
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+ .section-title {
+    color: #201b2d;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    text-align: center;
+ }
+ .future-wishes {
+    display: flex;
+    justify-content: space-between;
+ }
+ .wish {
+    width: 287px;
+    background: url("../img/icon_time.png") no-repeat center top;
+    padding-top: 87px;
+    margin-top: 75px;
+ }
+ .wish-title {
+    color: #201b2d;
+    font-size: 19px;
+    letter-spacing: 0.38px;
+    text-align: center;
+    margin-bottom: 15px; 
+ }
+.wish-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+.wish-trip {
+    width: 265px;
+    background: url("../img/icon_trip.png") no-repeat center top;
+}
+.wish-appreciate {
+    width: 300px;
+    background: url("../img/icon_rocket.png") no-repeat center top;
+}
+ .order {  
+    background-color: #ecf3f8;
+    padding-top: 105px;
+    padding-bottom: 110px;
+ }
+ .form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 57px;
+ }
+ .input {
+    width: 343px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    background-color: #ffffff;
+    opacity: 0.55;
+    font-family: 'Ubuntu', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+ }
+.button-order {
+    border: none;
+    cursor:pointer;
+}
+ .footer {
+    background-color: #164d7a;
+    padding-top: 62px;
+    padding-bottom: 66px;
+ }
+ .footer-credits {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+ }
+
+ /* Responsive */
+
+ /* 992px - 1200px */
+ @media screen and (max-width: 1200px) {
+   .container {
+      width: 960px;
+    }
+   .header-description {
+      width: 50%;
+    }
+    .dream-img {
+      width: 50%;
+    }
+    
+
+ }
+
+  /* 768x - 992px */
+ @media screen and (max-width: 992px) {
+      .container {
+      width: 720px;
+    }
+   .header-block {
+      flex-direction: column;
+    }
+    .header-description {
+        width: auto;
+    }
+    .header-title {
+        width: auto;
+    }
+    .header-text {
+        width: auto;
+    }
+    .dream-img {
+      width: auto;
+    }
+ }
+  /* 576px - 768px */
+ @media screen and (max-width: 768px) {
+      .container {
+      width: 540px;
+    }
+    .dream-img {
+      width: 100%;
+    }
+    .future-wishes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wish {
+        width: auto;
+    }
+    .input {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+ }
+
+  /* 0px - 576px */
+ @media screen and (max-width: 576px) {
+    .container {
+      width: 90%;
+    }
+ }
